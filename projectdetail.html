@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details</title>
+
+    <!-- CSS file -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: "Poppins", sans-serif;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+        .mainContainer{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            color: #121212;
+            display: flex;
+            flex-direction: column;
+        }
+        .projectDetail{
+           flex-grow: 1;
+           width: 100%;
+           margin: auto;
+           padding: 1rem;
+       }
+
+       .projectDetail .project{
+           max-width: 800px;
+           width: 100%;
+           margin: auto;
+       }
+        .project img{
+            width: 100%;
+            margin-bottom: 2rem;
+            border-radius: 20px;
+        }
+        .project .info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid black;
+
+        }
+        .project .info .links{
+            flex-grow: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .project .info .links a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: grey;
+        }
+        .project .info .links a:hover{
+            color: blue;
+            border-bottom: 2px solid blue;
+        }
+        
+        .project .info .links a span{
+            white-space: nowrap;
+        }
+        .project .info .links a img{
+            width: 25px;
+            border: 1px solid red;
+        }
+        .closebtn{
+            align-self: flex-start;
+            display: block;
+            width: 40px;
+            aspect-ratio: 1;
+            background-image: url("images/backarrow.svg");
+            background-size: cover;
+            margin-bottom: 1rem;
+        }
+        .projectDetail .project h3{
+            margin-bottom: 1rem;
+        }
+
+        .projectDetail .project p{
+            font-size: 1rem;
+            line-height: 200%;
+            margin-bottom: 2rem;
+        }
+
+        .project .tech{
+            margin-block: 1rem 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .project .tech span{
+            font-weight: 500;
+            padding: 12px 40px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+
+        }
+
+        .footer{
+            width: 100%;
+            height: fit-content;
+            background-color: black;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+
+
+  </head>
+    <body>
+        <div class="mainContainer">
+            <section id="projectDetail" class="projectDetail">
+                <div ></div>
+                <a class="closebtn" href="#"><span class="sr-only">Go Back</span></a>
+                <div class="project">
+                    <img
+                                src="/images/text.jpg"
+                                alt="projectMockup"
+                    />
+                    <div class="info">
+                        <h1>Doflamingo</h1>
+                        <div class="links">
+                            <a href="#">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#"> 
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Project overview</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur quaerat iure veniam possimus ad, ipsam facilis
+                        dignissimos itaque nisi ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, illo voluptatum, quos sit iste similique repellat ducimus praesentium dolore quasi aspernatur vel doloribus, nulla deserunt ipsam exercitationem in fuga tenetur!
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur quaerat iure veniam possimus ad, ipsam facilis
+                        dignissimos itaque nisi ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, illo voluptatum, quos sit iste similique repellat ducimus praesentium dolore quasi aspernatur vel doloribus, nulla deserunt ipsam exercitationem in fuga tenetur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est illo adipisci quas, reiciendis placeat delectus sunt error nobis pariatur, consequatur nesciunt impedit consequuntur quia atque? Aut culpa laboriosam quam distinctio?
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur quaerat iure veniam possimus ad, ipsam facilis
+                        dignissimos itaque nisi ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, illo voluptatum, quos sit iste similique repellat ducimus praesentium dolore quasi aspernatur vel doloribus, nulla deserunt ipsam exercitationem in fuga tenetur!
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur quaerat iure veniam possimus ad, ipsam facilis
+                        dignissimos itaque nisi ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, illo voluptatum, quos sit iste similique repellat ducimus praesentium dolore quasi aspernatur vel doloribus, nulla deserunt ipsam exercitationem in fuga tenetur!
+                    </p>
+
+                    <h3>Technologies used</h3>
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <span>@Copyright 2023, Made by Ritesh Thawkar.</span>
+            </footer>
+        </div>
+    </body>
+    <!-- <script defer src="index.js"></script> -->
+</html>
